@@ -25,7 +25,6 @@ func (t *Tasks) GetAll(c *gin.Context) {
 
 	if res.RecordNotFound() {
 		c.JSON(404, gin.H{"error": "no tasks in the table"})
-		return
 	} else {
 		c.JSON(200, gin.H{"data": res.Value})
 	}
@@ -38,7 +37,6 @@ func (t *Tasks) Get(c *gin.Context) {
 
 	if res.RecordNotFound() {
 		c.JSON(404, gin.H{"error": ("no task found with id: " + id)})
-		return
 	} else {
 		c.JSON(200, gin.H{"data": res.Value})
 	}
