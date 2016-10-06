@@ -38,4 +38,5 @@ func main() {
 	router.GET("/task/:id", tasks.Get)
 	router.PATCH("/tasks/:id", tasks.Update)
 	router.Run() // listen and server on 0.0.0.0:8080
+	defer db.Close()
 }

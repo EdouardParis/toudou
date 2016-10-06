@@ -27,7 +27,7 @@ DATABASE_USER=username DATABASE_NAME=dbname DATABASE_PASSWORD=dbpassword toudou
 
 ```
 
-## Test you api
+## Test your api
 
 ```
 curl -i -X POST -H "Content-Type:application/json" -d "{ \"name\": \"third task\", \"description\":\"find some coffee\"}" http://localhost:8080/tasks
