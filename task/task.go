@@ -21,7 +21,7 @@ type Tasks struct {
 
 func (t *Tasks) GetAll(c *gin.Context) {
 	tasks := []Task{}
-	res := t.Db.Find(&tasks)
+	res := t.Db.Order("created_at").Find(&tasks)
 
 	if res.RecordNotFound() {
 		c.JSON(404, gin.H{"error": "no tasks in the table"})
