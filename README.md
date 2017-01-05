@@ -9,9 +9,9 @@
 
 2. Get dependencies and compile
 
-Install [Glide](https://Glide.sh)
+Install [Glide](https://Glide.sh):
 ```
-glide update :
+glide update
 ```
 compile:
 ```
