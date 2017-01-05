@@ -9,14 +9,11 @@
 
 2. Get dependencies and compile
 
+Install [Glide](https://Glide.sh)
 ```
-go get github.com/gin-gonic/gin
-go get github.com/jinzhu/gorm
-go get github.com/lib/pq
-go get github.com/mattn/go-sqlite3
-go get github.com/stretchr/testify/assert
-
+glide update :
 ```
+compile:
 ```
 go install
 
